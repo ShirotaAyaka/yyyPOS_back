@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
+import os
 
 app = FastAPI() #ベース。空箱を作る
+
+port = int(os.getenv("PORT", 8000))
+uvicorn.run(app, host="0.0.0.0", port=port)
 
 # .envファイルの内容をロード
 load_dotenv()
