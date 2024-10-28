@@ -10,7 +10,7 @@ load_dotenv()
 # CORS設定 (NEXT.jsからのリクエストを許可する)
 origins = [
     "http://localhost:3000",  # NEXT.jsのデフォルトポート
-    "tech0-gen-7-step4-studentwebapp-pos-31-bzeyaydshdh9escq.eastus-01.azurewebsites.net",  # NEXT.jsのデフォルトポート
+    "https://tech0-gen-7-step4-studentwebapp-pos-31-bzeyaydshdh9escq.eastus-01.azurewebsites.net",  # NEXT.jsのデフォルトポート
 ]
 
 app.add_middleware(
